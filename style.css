@@ -1,0 +1,41 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #1a1a40, #4a148c);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.glass-bottle img {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.glass-bottle img:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+
+#message {
+    font-size: 20px;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
